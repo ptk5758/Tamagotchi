@@ -1,9 +1,11 @@
-function kjw(props) {
-<div>{props.name}</div>
+function Kjw(props) {
+    return(
+        <div>{props.name}</div>
+    );
 }
 
 
 
 
 
-export default kjw;
+export default Kjw;
