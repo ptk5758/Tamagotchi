@@ -1,12 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
-import Kjw from './Kjw';
+import ParkTaeGwang from './ParkTaeGwang';
+
 
 function App() {
   return (
-    <div>    
-      테스트 
-      <Kjw name = "김지완 하위 컴포넌트 테스트"/>
+    <div className='content'>      
+      <main>
+        메인컨탠츠입니다.
+      </main>
+      <div className='footer'>
+        <div className='action-group'>
+          <span className='action-item'>밥주기</span>
+          <span className='action-item'>놀아주기</span>
+          <span className='action-item'>씻겨주기</span>
+        </div>
+      </div>
     </div>
   );
 }
