@@ -1,0 +1,42 @@
+html {
+    height: 100%;
+}
+body {
+    background-color: #eeeeee;
+    height: 100%;
+}
+#root {
+    height: 100%;
+}
+.content {
+    height: 100%;
+}
+
+main {
+    background-color: aqua;
+    height: 88%;
+}
+
+.footer {
+    background-color: crimson;
+    height: 12%;
+}
+.footer .action-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+.footer .action-item {
+    border: 2px solid #000000;
+    font-size: 28px;
+    padding: 1rem;
+    background-color: rgb(200, 253, 147);
+    border-radius: 8px;
+    font-weight: 500;
+    width: 18%;
+    text-align: center;
+}
+.footer .action-item:hover {
+    background-color: rgb(146, 186, 106);
+}
