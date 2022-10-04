@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import kjw from './kjw';
 
 function App() {
   return (
     <div>     
-      이현승 hello worl
+      <kjw name = "김지완 하위 컴포넌트 테스트"/>
 
      
     </div>
