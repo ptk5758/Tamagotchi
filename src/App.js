@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div>      
-      Start
+      천부희짱
     </div>
   );
 }
