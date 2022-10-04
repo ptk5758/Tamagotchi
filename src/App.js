@@ -5,7 +5,7 @@ function App() {
   return (
     <div>     
       이현승 hello worl
-      <ParkTaeGwang/>
+      <ParkTaeGwang name="박태광"/>
      
     </div>
   );

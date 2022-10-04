@@ -1,6 +1,6 @@
-function ParkTaeGwang() {
+function ParkTaeGwang(props) {
     return(
-        <div>박태광 컴포넌트</div>
+        <div>{props.name} 컴포넌트</div>
     );
 }
 
