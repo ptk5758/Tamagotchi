@@ -1,7 +1,9 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
-import ParkTaeGwang from './ParkTaeGwang';
 function App() {
+  let [dama, setDama] = useState({
+
+  });
   return (
     <div className='content'>      
       <main>
