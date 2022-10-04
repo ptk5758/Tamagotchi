@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div>      
-      Start test kky
+      Start test2 kky
     </div>
   );
 }
