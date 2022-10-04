@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div>      
-      Start test2 kky
+      충돌때문에 수정 함
     </div>
   );
 }
