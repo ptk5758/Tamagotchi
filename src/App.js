@@ -15,6 +15,7 @@ function App() {
           <span className='action-item'>놀아주기</span>
           <span className='action-item'>씻겨주기</span>
         </div>
+        {/* <div>커밋 충돌 방지용 수정</div> */}
       </div>
     </div>
   );
