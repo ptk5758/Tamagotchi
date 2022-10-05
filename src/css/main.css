@@ -15,6 +15,7 @@ body {
 main {
     background-color: aqua;
     height: 88%;
+    position: relative;
 }
 
 .footer {
@@ -40,4 +41,13 @@ main {
 .footer .action-item:hover {
     background-color: rgb(146, 186, 106);
     cursor: pointer;
+}
+#dama {
+    border: 2px solid #000000;
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
