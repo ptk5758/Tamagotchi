@@ -1,15 +1,19 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState , useRef} from 'react';
 import './App.css';
 
 function App() {
   let [dama, setDama] = useState({
-    stamina : 100
+    hunger : 100,
+    stamina : 100,
+    clean : 100
   });
   const savedCallback = useRef();
 
   function damaStaminaDown() {
     let temp = Object.assign({}, dama);
     temp.stamina -= 1;
+    temp.clean -= 1;
+    temp.hunger -= 1;
     setDama(temp);
   }
 
@@ -29,21 +33,34 @@ function App() {
   return (
     <div className='content'>
       <main>
-        <div id='dama'>{dama.stamina}</div>
+        <div id='dama'>{"hunger : " + dama.hunger}<br/>{"stamina : " + dama.stamina}<br/>{"clean : " + dama.clean}</div>
       </main>
       <div className='footer'>
         <div className='action-group'>
-          <span className='action-item'>밥주기</span>
           <span className='action-item' onClick={()=>{
-            let temp = dama
+            let temp = Object.assign({}, dama);
+            temp.hunger += 10;
+            setDama(temp);
+            console.log(dama);
+          }}>밥주기</span>
+          <span className='action-item' onClick={()=>{
+            let temp = Object.assign({}, dama);
             temp.stamina += 10;
             setDama(temp);
+            console.log(dama);
           }}>놀아주기</span>
-          <span className='action-item'>씻겨주기</span>
+          <span className='action-item' onClick={()=>{
+            let temp = Object.assign({}, dama);
+            temp.clean += 10;
+            setDama(temp);
+            console.log(dama);
+          }}>씻겨주기</span>
         </div>
       </div>
     </div>
   );
 }
+
+
 
 export default App;
