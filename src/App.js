@@ -1,14 +1,35 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './App.css';
 
 function App() {
   let [dama, setDama] = useState({
-    stamina : 0
+    stamina : 100
   });
+  const savedCallback = useRef();
+
+  function damaStaminaDown() {
+    let temp = Object.assign({}, dama);
+    temp.stamina -= 1;
+    setDama(temp);
+  }
+
+  useEffect(() => {
+    savedCallback.current = damaStaminaDown;
+  });
+
+  useEffect(() => {
+    function tick() {
+      savedCallback.current();
+    }
+
+    let id = setInterval(tick, 1000);
+    return () => clearInterval(id);
+  }, []);
+
   return (
     <div className='content'>
       <main>
-        <div id='dama'></div>
+        <div id='dama'>{dama.stamina}</div>
       </main>
       <div className='footer'>
         <div className='action-group'>
