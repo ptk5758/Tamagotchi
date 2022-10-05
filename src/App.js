@@ -33,7 +33,7 @@ function App() {
   return (
     <div className='content'>
       <main>
-        <div id='dama'>{dama.stamina}</div>
+        <div id='dama'>{"hunger : " + dama.hunger}<br/>{"stamina : " + dama.stamina}<br/>{"clean : " + dama.clean}</div>
       </main>
       <div className='footer'>
         <div className='action-group'>
