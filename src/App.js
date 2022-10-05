@@ -8,7 +8,7 @@ function App() {
   return (
     <div className='content'>
       <main>
-        메인컨탠츠입니다.
+        <div id='dama'></div>
       </main>
       <div className='footer'>
         <div className='action-group'>
