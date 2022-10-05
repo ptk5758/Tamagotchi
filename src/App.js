@@ -1,10 +1,12 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
-import ParkTaeGwang from './ParkTaeGwang';
 
 function App() {
+  let [dama, setDama] = useState({
+
+  });
   return (
-    <div className='content'>      
+    <div className='content'>
       <main>
         메인컨탠츠입니다.
       </main>

@@ -39,4 +39,5 @@ main {
 }
 .footer .action-item:hover {
     background-color: rgb(146, 186, 106);
+    cursor: pointer;
 }
